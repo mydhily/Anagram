@@ -17,12 +17,8 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
-
-
-
 public class Anagram
 {
-
 public  static class AnagramMapper  extends Mapper<LongWritable, Text, Text, Text>{
 	private Text sortedText = new Text();
     private Text orginalText = new Text();
