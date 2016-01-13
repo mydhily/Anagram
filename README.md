@@ -58,7 +58,6 @@ public  static class AnagramReducer  extends Reducer<Text, Text, Text, Text>{
                 outputValue.set(output);
                context.write(outputKey, outputValue);
         }
-
 }
 }
 
